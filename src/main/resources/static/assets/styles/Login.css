@@ -1,0 +1,97 @@
+/* CSS DE LOGIN */
+
+/* TAGS */
+body {
+    height: 80px !important;
+}
+
+/* IDS */
+#titulo_login {
+    margin-top: 5%;
+}
+
+#form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 83px;
+    margin-bottom: 6%;
+}
+
+#datos_login {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 18px;
+}
+
+#botones_form {
+    display: inline-flex;
+    align-items: flex-start;
+    gap: 104px;
+}
+
+/*Landscape*/
+@media (min-width: 810px) and (max-width: 1080px) and (orientation:landscape) {
+
+    #form {
+        margin-left: 0px !important;
+        margin-top: 0px !important;
+    }
+
+    #enviar {
+        font-size: 30px;
+    }
+}
+
+/*Portrait*/
+@media (min-width: 810px) and (max-width: 1080px) and (orientation:portrait) {
+    #enviar {
+        padding-bottom: 3%;
+    }
+
+    #volver a {
+        font-size: 34px !important;
+    }
+
+}
+
+/*Fin tablet*/
+
+/*Inicio movil*/
+/*Landscape*/
+@media (min-width: 375px) and (max-width: 810px) and (orientation:landscape) {
+
+    .menu_hamburguesa{
+        display: block;
+        width: 60px;
+        margin-right: 700px;
+        margin-top: 2% !important;
+    }
+ 
+}
+
+/*Portrait*/
+@media (min-width: 375px) and (max-width: 810px) and (orientation:portrait) {
+
+    .menu_hamburguesa{
+        display: none !important;
+    }
+
+    .fondo_titulo{
+        width: 411px !important;
+        height: 178px !important;
+    }
+
+    #botones_form{
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    #form{
+        gap: 40px;
+    }
+ 
+}
+
+/*fin movil*/

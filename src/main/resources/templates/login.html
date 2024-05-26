@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../static/assets/styles/Login.css">
+        <link rel="stylesheet" href="../static/assets/styles/Styles.css">
+        <title>Login</title>
+    </head>
+    <body>
+        <main>
+            <a href="menu_hamburguesa.html"><img class="menu_hamburguesa"
+                src="../static/assets/img/menuhamburguesa.png"
+                alt="Menu" /></a>
+            <section id="titulo_login">
+                <img class="fondo_titulo"
+                    src="../static/assets/img/tit_login.png" />
+            </section>
+            <form id="form" th:action="@{/login}" th:object="${usuario}"
+                th:method="post">
+                <article id="datos_login">
+                    <label> Nombre de usuario: </label>
+                    <p><input class="input_corto" type="text" th:name="username"
+                            th:field="*{username}"
+                            placeholder="Usuario" /></p>
+                    <label> Contraseña: </label>
+                    <p><input class="input_corto" type="password"
+                            th:name="password" th:field="*{password}"
+                            placeholder="Password" /></p>
+                </article>
+                <article id="botones_form">
+                    <button id="enviar" type="submit"
+                        class="botones_principales">Enviar</button>
+                    <button id="volver"
+                        class="botones_principales"><a
+                        th:href="@{/}">Volver</a></button>
+                </article>
+            </form>
+        </main>
+    </body>
+</html>

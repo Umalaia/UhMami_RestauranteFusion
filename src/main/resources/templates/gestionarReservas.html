@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../static/assets/styles/Reservas.css">
+        <link rel="stylesheet" href="../static/assets/styles/Styles.css">
+        <title>Gestión de reserva</title>
+    </head>
+    <body>
+        <header>
+            <nav>
+                <button class="botones_nav"><a
+                        href="restaurante.html">Restaurante</a></button>
+                <button class="botones_nav"><a
+                        href="carta.html">Carta</a></button>
+                <a href="home.html"><img class="logo"
+                        src="../static/assets/img/logo.png"
+                        alt="Logo UhMami" /></a>
+                <button class="botones_nav"><a
+                        href="contacto.html">Contacto</a></button>
+                <button class="botones_nav"><a
+                        href="reservas.html">Reservas</a></button>
+            </nav>
+        </header>
+
+        <main>
+            <section id="reservas">
+                <section id="principalReserva">
+                    <a href="menu_hamburguesa.html"><img class="menu_hamburguesa"
+                        src="../static/assets/img/menuhamburguesa.png"
+                        alt="Menu" /></a>
+                    <img
+                        class="foto_principal_reserva"
+                        src="../static/assets/img/7.jpg"
+                        alt="foto corquetas" />
+                    <article id="tituloGestionarReserva">
+                        <h1>Gestionar Reserva</h1>
+                    </article>
+                </section>
+                <section id="reservar">
+                    <img class="fondo_titulo"
+                        src="../static/assets/img/tit_modificar.png" />
+                </section>
+                <form id="form" th:action="@{/reservar}" th:object="${cliente}"
+                    th:method="post">
+                    <article id="datos_reservar">
+                        <p><input class="input_corto" type="text"
+                                th:name="nombre" th:field="*{nombre}"
+                                placeholder="Nombre" /></p>
+                        <p><input class="input_largo" type="text"
+                                th:name="apellidos" th:field="*{apellidos}"
+                                placeholder="Apellidos" /></p>
+                        <p><input class="input_largo" type="email"
+                                th:name="email" th:field="*{email}"
+                                placeholder="Email" /></p>
+                        <p><input class="input_corto" type="text"
+                                th:name="telefono" th:field="*{telefono}"
+                                placeholder="Teléfono" /></p>
+                    </article>
+
+                    <section id="datos_reservar">
+                        <article id="comensales">
+                            <p><label for="comensales">Comensales : </label>
+                                <select name="comensales.idComensal">
+                                    <option value="1"> 1 </option>
+                                    <option value="2"> 2 </option>
+                                    <option value="3"> 3 </option>
+                                    <option value="4"> 4 </option>
+                                    <option value="5"> 5 </option>
+                                    <option value="6"> 6 </option>
+                                    <option value="7"> 7 </option>
+                                    <option value="8"> 8 </option>
+                                </select>
+                            </p>
+                        </article>
+                        <section id="fecha_hora">
+                            <article id="calendario">
+                                <label for="fecha">Fecha : </label>
+                                <input type="date" id="fecha"
+                                    th:name="fecha">
+                            </article>
+                            <article id="hora">
+                                <article id="horas">
+                                    <label for="hora">Hora : </label>
+                                    <select name="horas.idHora">
+                                        <option value="1230"> 12:30
+                                        </option>
+                                        <option value="1300"> 13:00
+                                        </option>
+                                        <option value="1330"> 13:30
+                                        </option>
+                                        <option value="1400"> 14:00
+                                        </option>
+                                        <option value="1430"> 14:30
+                                        </option>
+                                        <option value="1500"> 15:00
+                                        </option>
+                                        <option value="1530"> 15:30
+                                        </option>
+                                        <option value="2100"> 21:00
+                                        </option>
+                                        <option value="2130"> 21:30
+                                        </option>
+                                        <option value="2200"> 22:00
+                                        </option>
+                                        <option value="2230"> 22:30
+                                        </option>
+                                        <option value="2300"> 23:00
+                                        </option>
+                                        <option value="2330"> 23:30
+                                        </option>
+                                    </select>
+                                </article>
+                            </article>
+                        </section>
+                    </section>
+                    <article id="obs">
+                        <p><label>Observaciones: </label><br>
+                            <textarea id="observacionesReservar"
+                                th:name="observacioneReservar"
+                                th:field="*{observaciones}" cols="50" rows="8"
+                                placeholder="Observaciones..."></textarea></p>
+                    </article>
+
+                    <article id="politicas">
+                        <input type="checkbox" id="acepto" name="acepto">
+                        <label for="acepto">Acepto que al modificar la reserva
+                            se me asigne una nueva mesa
+                            en base a la disponibilidad</label><br><br>
+                        <input type="checkbox" id="politica" name="politica">
+                        <label for="politica">Acepto el aviso legal y la
+                            política de privacidad</label><br>
+                    </article>
+
+                    <br>
+                    <div id="botones_modificar_y_cancelar">
+                    <button id="reservar" type="submit"
+                        class="botones_principales">Modificar <br> Reserva</button>
+                    <button id="cancelar" type="submit"
+                        class="botones_principales">Cancelar <br> Reserva</button>
+                    </div>
+                </form>
+            </main>
+
+            <footer>
+                <section id="footer">
+                    <article id="datos">
+                        <img id ="logo_footer" src="../static/assets/img/logoPeque.png" alt="Logo Uhmami" />
+                        <p class="txt_footer">Cala Gració, Ibiza - 07800</p>
+                        <p class="txt_footer">UhMami@contacto.com</p>
+                    </article>
+                    <article id="legal">
+                        <p><a href="#" class="txt_footer">Terminos y
+                                condiciones</a></p>
+                        <p><a href="#" class="txt_footer">Políticas de
+                                privacidad</a></p>
+                        <p><a href="#" class="txt_footer">Aviso legal</a></p>
+                        <p><a href="#" class="txt_footer">Política de
+                                cookies</a></p>
+                    </article>
+                </section>
+            </footer>
+
+        </body>
+    </html>

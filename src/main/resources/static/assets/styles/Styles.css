@@ -1,0 +1,1139 @@
+/* -- CSS COMUN EN TODAS LAS PÁGINAS -- */
+/* FUENTES */
+@font-face {
+    font-family: 'Brittany Signature';
+    src: url('../fonts/BrittanySignature.ttf') format('truetype');
+}
+
+
+@font-face {
+    font-family: 'Simonetta-Black';
+    src: url('../fonts/Simonetta-Black.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Simonetta-BlackItalic';
+    src: url('../fonts/Simonetta-BlackItalic.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Simonetta-Italic';
+    src: url('../fonts/Simonetta-Italic.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Simonetta';
+    src: url('../fonts/Simonetta-Regular.ttf') format('truetype');
+}
+
+
+/* GENERAL*/
+body {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: var(--BASE-Amarillo, #F6F2E7);
+    width: 100%;
+    max-width: 1440px; 
+}
+
+
+main {
+    background-image: url(../img/fondo.png);
+    width: 100%;
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 49px;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+
+/* TAGS */
+h1 {
+    color: var(--BASE-Rosa, #FFF8F5);
+    text-shadow: 7px 9px 4px rgba(0, 0, 0, 0.70);
+    font-family: "Brittany Signature";
+    font-size: 100px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin: 16px;
+    margin-top: 25%;
+    text-align: center;
+}
+
+h2 {
+    font-family: Simonetta;
+    font-size: 65px;
+    color: var(--MARCA-Verde-oscuro, #616D69);
+    text-align: center;
+}
+
+h3 {
+    color: var(--BASE-Rosa, #FFF8F5);
+    text-align: center;
+    text-shadow: 0px 7px 4px #000, 5px 4px 0px rgba(0, 0, 0, 0.50);
+    font-family: Simonetta;
+    font-size: 65px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+h4 {
+    color: #FFF;
+    text-shadow: 0px 7px 4px #000, 5px 4px 0px rgba(0, 0, 0, 0.50);
+    font-family: Simonetta;
+    font-size: 34px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+    margin: 8px;
+}
+
+h5 {
+    color: var(--MARCA-Verde-oscuro, #616D69);
+    font-family: Simonetta;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin: 0;
+    width: 450px;
+}
+
+h6 {
+    color: #000;
+    font-family: Simonetta;
+    font-size: 34px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+    margin: 0px;
+}
+
+p {
+    font-family: Simonetta;
+    font-size: 34px;
+    margin: 8px;
+}
+
+
+/* CLASES */
+.precio {
+    width: 35px;
+}
+
+.txt_footer {
+    text-decoration: none;
+    color: var(--MARCA-Verde-oscuro, #616D69);
+    font-family: Simonetta;
+    font-size: 34px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+}
+
+/* MENU HAMBURGUESA */
+
+.menu_hamburguesa {
+    display: none;
+}
+
+
+/* HEADER */
+header {
+    background-image: url(../img/gradiente.jpg);
+    width: 100%;
+    height: 252px;
+    display: inline-flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25), 8px 8px 16px 0px rgba(255, 255, 255, 0.25) inset;
+}
+
+nav {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    padding: 6px 19px;
+}
+
+.logo {
+    width: 376px;
+    height: 239px;
+    flex-shrink: 0;
+}
+
+
+
+/* FOOTER */
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 500px;
+    background-image: url(../img/gradiente.jpg);
+    box-shadow: 0px -6px 8px 0px rgba(0, 0, 0, 0.25);
+}
+
+#footer {
+    display: flex;
+    width: 1259px;
+    align-items: center;
+    gap: 20%;
+    margin-top: 3%;
+    margin-bottom: 3%;
+}
+
+#datos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+#legal {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 16px;
+    margin-top: 6%;
+}
+
+
+/* TITULOS */
+.fondo_titulo {
+    margin: 0 auto;
+    width: 567px;
+    height: 245px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+
+/* BOTONES NAVEGADOR */
+.botones_nav {
+    background: transparent;
+    background-image: url(../img/boton_verde_oscuro.png);
+    display: flex;
+    width: 251px;
+    height: 86px;
+    justify-content: center;
+    border: 0px;
+}
+
+.botones_nav:hover {
+    background-image: url(../img/boton_verde.png);
+}
+
+
+.botones_nav:active {
+    background-image: url(../img/navClicked.png);
+}
+
+.botones_nav a {
+    color: var(--BASE-Amarillo, #FFFCF2);
+    font-family: Simonetta;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+    text-decoration: none;
+    text-align: center;
+    padding-top: 17px;
+    padding-left: 25px;
+}
+
+.botones_nav a:hover {
+    color: var(--MARCA-Verde-oscuro, #616D69);
+}
+
+.botones_nav a:active {
+    color: var(--MARCA-Verde-oscuro, #616D69);
+}
+
+
+/* BOTONES PRINCIPALES */
+.botones_principales {
+    background: transparent;
+    background-image: url(../img/btn_principales_oscuro.png);
+    border: 0px;
+    margin: 0 auto;
+    margin-top: 5%;
+    display: flex;
+    width: 310px;
+    height: 84px;
+    flex-direction: column;
+    justify-content: center;
+    color: var(--BASE-Amarillo, #FFFCF2);
+    text-align: center;
+    font-family: Simonetta;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+    text-decoration: none;
+}
+
+.botones_principales:hover {
+    background-image: url(../img/btn_principales_verde.png);
+}
+
+.botones_principales:active {
+    background-image: url(../img/primarioClicked.png);
+}
+
+.botones_principales a {
+    display: flex;
+    width: 304px;
+    height: 84px;
+    flex-direction: column;
+    justify-content: center;
+    color: var(--BASE-Amarillo, #FFFCF2);
+    text-align: center;
+    text-decoration: none;
+    padding-left: 3%;
+}
+
+.botones_principales a:hover {
+    color: var(--MARCA-Verde-oscuro, #616D69);
+}
+
+.botones_principales a:active {
+    color: var(--MARCA-Verde-oscuro, #616D69);
+}
+
+
+/* BOTONES SECUNDARIOS */
+
+.botones_secundarios {
+    background: transparent;
+    border: 0px;
+    background-image: url(../img/btn_sec.png);
+    color: var(--BASE-Amarillo, #FFFCF2);
+    text-shadow: 2px 3px 5px #000;
+    font-family: Simonetta;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 900;
+    width: 265px;
+    height: 82px;
+    filter: drop-shadow(-3px -4px 20px rgba(0, 0, 0, 0.25)) drop-shadow(5px 6px 8px rgba(0, 0, 0, 0.60));
+}
+
+.botones_secundarios:hover {
+    background-image: url(../img/secHover.png);
+}
+
+.botones_secundarios:active {
+    background-image: url(../img/sec_active.png);
+}
+
+.botones_secundarios a {
+    color: var(--BASE-Amarillo, #FFFCF2);
+    text-align: center;
+    text-shadow: 2px 3px 5px #000;
+    font-family: Simonetta;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+    text-decoration: none;
+    padding-bottom: 3%;
+}
+
+.botones_secundarios a:hover {
+    color: var(--MARCA-Verde-oscuro, #616D69);
+    text-align: center;
+    font-family: Simonetta;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+}
+
+/* BOTONES MODIFICAR */
+
+.botones_modificar {
+    background: transparent;
+    background-image: url(../img/boton_modificar.png);
+    border: 0px;
+    margin: 0 auto;
+    margin-top: 5%;
+    display: flex;
+    width: 230px;
+    height: 75px;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.botones_modificar:hover {
+    background-image: url(../img/btn_modif_hover.png);
+}
+
+.botones_modificar:active {
+    background-image: url(../img/btn_modif_clicked.png);
+}
+
+
+
+/* ELEMENTOS DE FORMULARIOS */
+input {
+    color: #AAA;
+    font-family: Simonetta;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding-left: 3%;
+}
+
+textarea {
+    color: #BCBCBC;
+    font-family: Simonetta;
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding-left: 3%;
+    padding-right: 3%;
+    padding-top: 2%;
+    width: 570px;
+    height: 200px;
+    flex-shrink: 0;
+    border-radius: 10px;
+    border: 1px solid var(--MARCA-Verde-oscuro, #616D69);
+    background: var(--BASE-Rosa, #FFF8F5);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+label {
+    color: #000;
+    text-align: center;
+    font-family: Simonetta;
+    font-size: 34px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+label {
+    font-size: 26px;
+}
+
+p label {
+    font-size: 26px;
+}
+
+select {
+    width: 80px;
+    height: 35px;
+    border: 1px solid var(--MARCA-Verde-oscuro, #616D69);
+    background: var(--BASE-Rosa, #FFF8F5);
+    color: var(--MARCA-Verde-oscuro, #616D69);
+    text-align: center;
+    font-family: Simonetta;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    border-radius: 5px;
+}
+
+#comensales {
+    display: flex;
+    align-items: flex-start;
+    width: 332px;
+    height: 86px;
+    margin-bottom: 3%;
+}
+
+
+#fecha_hora {
+    display: flex;
+    align-items: flex-start;
+    margin-left: 10px;
+    margin-bottom: 5%;
+}
+
+#calendario {
+    display: flex;
+    align-items: flex-start;
+    width: 400px;
+}
+
+#fecha {
+    display: flex;
+    align-items: flex-start;
+    border-radius: 5px;
+    height: 35px;
+    border: 1px solid var(--MARCA-Verde-oscuro, #616D69);
+    background: var(--BASE-Rosa, #FFF8F5);
+    color: var(--MARCA-Verde-oscuro, #616D69);
+    text-align: center;
+    font-family: Simonetta;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-left: 3%;
+}
+
+#hora {
+    display: flex;
+    align-items: flex-start;
+    margin-left: 3%;
+}
+
+#politicas {
+    margin-left: 1%;
+    margin-top: 3%;
+}
+
+#politica {
+    width: 25px;
+    height: 25px;
+}
+
+#acepto {
+    width: 25px;
+    height: 25px;
+}
+
+
+.input_corto {
+    width: 300px;
+    height: 40px;
+    border-radius: 20px;
+    background: var(--BASE-Rosa, #FFF8F5);
+}
+
+.input_largo {
+    width: 600px;
+    height: 40px;
+    border-radius: 20px;
+    background: var(--BASE-Rosa, #FFF8F5);
+}
+
+.pLabel {
+    width: 600px;
+    ;
+}
+
+
+/* MEDIA QUERIES */
+
+/*Tablet*/
+/*Landscape*/
+@media (min-width: 810px) and (max-width: 1080px) and (orientation: landscape) {
+
+    body {
+        width: 100% !important;
+        height: 50px;
+        ;
+    }
+
+    main {
+        width: 1080px;
+    }
+
+    header {
+        width: 1080px;
+        height: 200px;
+    }
+
+    nav {
+        width: 1041px;
+    }
+
+    p {
+        width: 810px;
+        margin: 0px;
+    }
+
+    p.p {
+        width: 500px !important;
+    }
+
+
+    .parrafos {
+        width: 500px !important;
+    }
+
+
+    /* HEADER */
+    .logo {
+        width: 260px;
+        height: 180px;
+        flex-shrink: 0;
+    }
+
+    /* BOTONES NAVEGADOR */
+    .botones_nav {
+        background-size: cover;
+        width: 210px;
+        height: 70px;
+        padding-top: 0px;
+        padding-right: 25px;
+    }
+
+    .botones_nav a {
+        font-size: 30px;
+        padding-top: 12px;
+    }
+
+    /* BOTONES PRINCIPALES */
+    .botones_principales {
+        background-size: cover;
+        margin-top: 5%;
+        width: 280px;
+        height: 80px;
+    }
+
+    .botones_principales a {
+        width: 280px;
+        font-size: 30px;
+        padding-left: 0%;
+        padding-bottom: 2%;
+    }
+
+    /* BOTONES SECUNDARIOS */
+    .botones_secundarios {
+        background-size: cover;
+        width: 225px;
+        height: 70px;
+    }
+
+    .botones_secundarios a {
+        font-size: 30px;
+        padding-left: 2%;
+    }
+
+    .botones_secundarios a:hover {
+        font-size: 30px;
+    }
+
+
+    /* TITULOS */
+    .fondo_titulo {
+        width: 460px;
+        height: 190px;
+        margin-bottom: 2%;
+    }
+
+    /* TAGS */
+    h1 {
+        font-size: 100px;
+        margin: 16px;
+        margin-top: 25%;
+    }
+
+    h2 {
+        font-size: 46px;
+    }
+
+    h3 {
+        font-size: 65px;
+    }
+
+    h4 {
+        font-size: 34px;
+        margin: 8px;
+    }
+
+    h5 {
+        font-size: 28px;
+        width: 450px;
+    }
+
+    h6 {
+        font-size: 34px;
+    }
+
+    p {
+        font-size: 26px;
+    }
+
+    /* FOOTER */
+    footer {
+        width: 1080px;
+    }
+
+    #footer {
+        width: 1080px;
+        gap: 20px;
+    }
+
+    #logo_footer {
+        margin-left: -20%;
+    }
+
+    #datos {
+        width: 50%;
+        margin-left: 8%;
+    }
+
+    #legal {
+        width: 40%;
+        gap: 30px;
+    }
+
+    p {
+        width: 100%;
+    }
+
+    .txt_footer {
+        width: 500px;
+    }
+
+
+    #formReserva {
+        margin-left: 30%;
+        margin-top: -5%;
+    }
+
+    #form {
+        margin-left: 10%;
+        margin-top: -3%;
+    }
+
+    #botones_modificar_y_cancelar {
+        margin-top: 3%;
+        margin-bottom: 7%;
+        margin-left: 10%;
+    }
+
+    #plano {
+        width: 100%;
+        margin-left: -20%;
+    }
+
+    .container {
+        margin-left: -22%;
+        margin-top: -22%;
+    }
+
+    #enviarReserva {
+        margin-left: 22%;
+    }
+}
+
+/*landscape*/
+@media (min-width: 810px) and (max-width: 1080px) and (orientation:portrait) {
+
+    body {
+        width: 810px !important;
+        height: 50px !important;
+    }
+
+    main {
+        width: 810px !important;
+    }
+
+    header {
+        width: 810px !important;
+        display: block;
+    }
+
+    nav {
+        width: 810px;
+        padding-left: 0px;
+    }
+
+    a {
+        font-size: 25px !important;
+    }
+
+    #footer {
+        width: 810px !important;
+        gap: 50px;
+        height: 200px;
+    }
+
+    #datos {
+        width: 55%;
+    }
+
+    #legal {
+        align-items: flex-start;
+        gap: 0px;
+        margin-top: 2%;
+    }
+
+    p.txt_footer {
+        font-size: 25px;
+    }
+
+    a.txt_footer {
+        font-size: 20px;
+    }
+
+    #logo_footer {
+        width: 250px !important;
+    }
+
+    .logo {
+        width: 200px;
+        height: 140px;
+    }
+
+    #logo_footer {
+        width: 70%;
+    }
+
+    /* BOTONES NAVEGADOR */
+    .botones_nav {
+        width: 150px;
+        height: 55px;
+        background-size: contain;
+    }
+
+    .botones_nav a {
+        font-size: 24px;
+        padding-top: 6px;
+        padding-left: 0px;
+    }
+
+
+    /* BOTONES PRINCIPALES */
+    .botones_principales {
+        width: 240px;
+        height: 70px;
+        background-size: contain;
+    }
+
+    .botones_principales a {
+        font-size: 32px;
+        padding-left: 0px;
+        width: 100%;
+        padding-bottom: 5%;
+    }
+
+    .botones_secundarios {
+        width: 230px;
+        height: 70px;
+    }
+
+    /* FORMULARIOS */
+
+    .form {
+        width: 810px;
+    }
+}
+
+/*fin tablet*/
+
+/*movil*/
+/*Landscape*/
+@media (min-width: 375px) and (max-width: 809px) and (orientation:landscape) {
+
+    body {
+        width: 809px !important;
+    }
+
+    main {
+        width: 100%;
+    }
+
+    /* HEADER */
+    .logo {
+        width: 240px;
+        height: 158px;
+    }
+
+    header {
+        display: none !important;
+    }
+
+    .menu_hamburguesa {
+        display: block;
+        width: 60px;
+        margin-right: 700px;
+        margin-top: 3%;
+    }
+
+    /* BOTONES NAVEGADOR */
+    .botones_nav {
+
+        width: 176px;
+        height: 54px;
+    }
+
+    .botones_nav a {
+        font-size: 26px;
+        padding-top: 12px;
+    }
+
+    /* BOTONES PRINCIPALES */
+    .botones_principales {
+        width: 200px;
+        height: 58px;
+        background-size: contain;
+        font-size: 25px;
+        padding-bottom: 2%;
+    }
+
+    .botones_principales a {
+        width: 174px !important;
+    }
+
+
+    /* BOTONES SECUNDARIOS */
+    .botones_secundarios {
+        background-size: cover;
+        width: 225px;
+        height: 70px;
+    }
+
+    .botones_secundarios a {
+        font-size: 30px;
+        padding-left: 2%;
+    }
+
+    .botones_secundarios a:hover {
+        font-size: 30px;
+    }
+
+    /* TITULOS */
+    .fondo_titulo {
+        width: 408px;
+        height: 160px;
+    }
+
+    /* TAGS */
+    h1 {
+        font-size: 100px;
+        margin: 16px;
+        margin-top: 25%;
+    }
+
+    h2 {
+        font-size: 43px;
+        margin-bottom: 16px;
+    }
+
+    h3 {
+        font-size: 65px;
+    }
+
+    h4 {
+        font-size: 34px;
+        margin: 8px;
+    }
+
+    h5 {
+        font-size: 28px;
+        width: 450px;
+    }
+
+    h6 {
+        font-size: 34px;
+    }
+
+    p {
+        font-size: 22px;
+    }
+
+    /* FOOTER */
+    #footer {
+        width: 100%;
+        gap: 80px;
+    }
+
+    #datos {
+        width: 50%;
+    }
+
+    #legal {
+        gap: 0px;
+    }
+
+    #logo_footer {
+        width: 65%;
+    }
+
+    .txt_footer {
+        font-size: 20px;
+    }
+
+    #tituloRestaurante {
+        width: 100%;
+    }
+
+    .fotos {
+        width: 100% !important;
+    }
+
+    .fondo_titulo {
+        height: 183px;
+    }
+
+    #fotoRecomendacion {
+        height: 542px !important;
+    }
+
+    #btn_recomendacion {
+        margin-top: 50% !important;
+        font-size: 20px;
+    }
+
+    .form {
+        width: 809px;
+    }
+
+    #formReserva {
+        padding-left: 8%;
+    }
+
+    #formulariocontacto {
+        padding-left: 8%;
+    }
+}
+
+/*Portrait*/
+@media (min-width: 375px) and (max-width: 809px) and (orientation:portrait) {
+    body {
+        width: 100%;
+    }
+
+    main {
+        width: 100%;
+    }
+
+    header {
+        display: none !important;
+    }
+
+    .menu_hamburguesa {
+        display: block;
+        width: 60px;
+        margin-top: 3%;
+    }
+
+    h1 {
+        margin-top: 0% !important;
+    }
+
+    h2 {
+        font-size: 40px;
+    }
+
+    h4 {
+        font-size: 25px;
+        text-align: center;
+    }
+
+    h6 {
+        text-align: center;
+        font-size: 32px;
+    }
+
+    p {
+        font-size: 30px;
+    }
+
+    p.p {
+        font-size: 21px !important;
+    }
+
+    .botones_principales{
+        width: 210px !important;
+        height: 61px !important;
+        background-size: contain !important;
+    }
+
+    .botones_principales a {
+        width: 100% !important;
+        font-size: 30px;
+        padding-bottom: 3%;
+        padding-left: 2%;
+    }
+
+    .botones_secundarios{
+        width: 210px !important;
+        height: 64px !important;
+        background-size: contain !important;
+        font-size: 25px;
+    }
+
+    .botones_secundarios a:hover{
+        font-size: 25px;
+    }
+
+    .botones_secundarios a{
+        font-size: 25px;
+    }
+
+    .Icon {
+        width: 20%;
+    }
+
+    #form {
+        width: 375px;
+    }
+
+    textarea {
+        font-size: 24px;
+        width: 320px;
+    }
+
+    footer {
+        width: 100%;
+    }
+
+    .txt_footer {
+        font-size: 25px;
+        width: 350px;
+    }
+
+    #footer {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    #datos {
+        text-align: center;
+    }
+
+    #legal {
+        align-items: center;
+        gap: 0px;
+    }
+
+    #logo_footer {
+        width: 250px;
+    }
+
+    #tituloRestaurante{
+        top: 50px !important;
+        right: 0px !important;
+    }
+
+    .botones_principales {
+        width: 229px;
+        height: 62px;
+        background-size: cover;
+    }
+
+    .input_corto{
+        width: 173px;
+    }
+
+    .input_largo{
+        width: 310px;
+    }
+}
+
+
+/*fin movil*/

@@ -1,0 +1,552 @@
+/* CSS CARTA */
+
+/* TAGS */
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 138px;
+}
+
+h1 {
+    margin-top: 0px;
+}
+
+h2 {
+    text-align: left !important;
+}
+
+ol.listaAlergenos {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    gap: 32px;
+}
+
+li.alergenos {
+    display: flex;
+    gap: 12px;
+}
+
+p.p1 {
+    width: 180px;
+}
+
+p.p2 {
+    width: 384px;
+}
+
+
+ol.listaComida {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 80px;
+    padding: 0;
+}
+
+li.lista {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+hr {
+    width: 575px;
+}
+
+
+
+/* IDS */
+#principal_carta {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+#tituloNuestraCarta {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    left: 19%;
+    top: 23%;
+}
+
+#paraEmpezar {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+#titulo_empezar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    left: 21%;
+    top: 136%;
+}
+
+#titulo_principales {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    left: 21%;
+    top: 370%;
+}
+
+#titulo_terminar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    left: 25%;
+    top: 705%;
+}
+
+#titulo_bebidas {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    left: 30%;
+    top: 868%;
+}
+
+#alergenos {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#frescoComienzo {
+    width: 1440px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 13%;
+}
+
+#l1izq {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 40px;
+}
+
+#l1drc {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 40px;
+}
+
+#cocktails {
+    margin-bottom: 10%;
+}
+
+
+
+/* CLASES */
+.foto_principal_carta {
+    width: 1440px;
+    height: 768px;
+    display: flex;
+}
+
+.fotosCarta {
+    width: 1440px;
+    height: 780px;
+    box-shadow: 6px 6px 8px 0px rgba(0, 0, 0, 0.25);
+    margin-top: 3%;
+}
+
+.textoLista {
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+}
+
+.h5NoIcon {
+    width: 514px;
+    height: 40px;
+}
+
+.Icon {
+    width: 59px;
+}
+
+
+/* MEDIA QUERIES */
+
+/*Tablet*/
+/*Portrait*/
+@media (min-width: 810px) and (max-width: 1080px) and (orientation:landscape) {
+
+    #tituloNuestraCarta {
+        padding-left: -20%;
+        padding-top: -6%;
+        width: 100%;
+    }
+
+    h1 {
+        width: 100%;
+        margin-left: 100%;
+        padding-top: 18%;
+    }
+
+    #h4 {
+        margin-left: 5%;
+        line-height: 70px;
+        text-align: center;
+    }
+
+    #h4secciones {
+        width: 100%;
+        margin-right: 30%;
+        line-height: 60px;
+        text-align: center;
+    }
+
+    h3 {
+        margin-right: 25%;
+    }
+
+    h1 {
+        margin-top: 0px !important;
+        padding-top: 0%;
+    }
+
+    ol.listaAlergenos {
+        gap: 8px;
+    }
+
+    p.p1 {
+        width: 120px;
+    }
+
+    #frescoComienzo {
+        width: 67%;
+    }
+
+    ol.listaComida {
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    #tituloNuestraCarta {
+        height: 200px;
+        margin-top: 15%;
+        margin-left: -20%;
+    }
+
+    #titulo_principales {
+        top: 470%;
+    }
+
+    #titulo_terminar {
+        top: 956%;
+        left: 20%;
+    }
+
+    #titulo_bebidas {
+        top: 1185%;
+        left: 24%;
+    }
+
+    .Icon {
+        width: 40px;
+    }
+
+    ol.listaAlergenos {
+        gap: 20px;
+    }
+
+}
+
+@media (min-width: 810px) and (max-width: 1080px) and (orientation:portrait) {
+    h1 {
+        font-size: 80px !important;
+        margin-top: 0px !important;
+        padding-top: 10%;
+    }
+
+    h4 {
+        font-size: 25px !important;
+    }
+
+    h3 {
+        font-size: 60px !important;
+    }
+
+    #h4 {
+        font-size: 25px !important;
+        text-align: center;
+    }
+
+    #h4secciones {
+        width: 700px;
+        text-align: center;
+    }
+
+    .foto_principal_carta,
+    .fotosCarta {
+        height: 500px;
+    }
+
+    #tituloNuestraCarta {
+        left: 1% !important;
+    }
+
+    #titulo_empezar {
+        left: 4% !important;
+        top: 75% !important;
+    }
+
+    li.alergenos {
+        width: 150px;
+    }
+
+    p {
+        font-size: 20px !important;
+    }
+
+    .Icon {
+        width: 40px !important;
+        height: 40px !important;
+    }
+
+    h2 {
+        text-align: center !important;
+    }
+
+    ol.listaAlergenos {
+        width: 100%;
+        gap: 0px;
+        padding-left: 1%;
+    }
+
+    #frescoComienzo {
+        width: 810px;
+        align-items: center;
+        margin-left: 0%;
+    }
+
+    ol.listaComida {
+        width: 810px;
+        flex-direction: column;
+        gap: 43px;
+        align-items: center;
+    }
+
+
+    #titulo_principales {
+        left: 0px;
+        top: 302% !important;
+        margin-left: 8%;
+    }
+
+    #titulo_terminar {
+        left: 0px;
+        top: 667% !important;
+        margin-left: 8%;
+    }
+
+    #titulo_bebidas {
+        left: 0px;
+        top: 815% !important;
+        margin-left: 8%;
+    }
+}
+
+@media (min-width: 375px) and (max-width: 809px) and (orientation:landscape) {
+    h1 {
+        margin-top: 0px !important;
+    }
+
+    h4{
+        text-align: center;
+    }
+
+    .menu_hamburguesa {
+        position: absolute;
+        right: 20px;
+    }
+
+    .foto_principal_carta{
+        width: 100%;
+        height: 573px;
+    }
+
+    .fotosCarta{
+        width: 100%;
+        height: 747px;
+    }
+
+    #tituloNuestraCarta, #titulo_empezar , #titulo_principales, #titulo_terminar, #titulo_bebidas{
+        left: 0%;
+    }
+
+    #titulo_empezar{
+        top:201%;
+    }
+
+    #titulo_principales{
+        top: 900%;
+    }
+
+    #titulo_terminar{
+        top:1961%;
+    }
+
+    #titulo_bebidas{
+        top: 2429%;
+        left: 2% !important;
+    }
+
+    #frescoComienzo{
+        width: 100%;
+        margin-left: 30%;
+    }
+
+    ol.listaComida{
+        flex-direction: column;
+        gap:37px;
+    }
+
+    .Icon{
+        width: 40px;
+        height: 40px;
+    }
+
+    ol.listaAlergenos{
+        gap:0%;
+        padding-left: 0% !important;
+    }
+    
+    li.alergenos{
+        gap:0%;
+    }
+    
+    p.p1{
+        width: 100px;
+    }
+
+}
+
+@media (min-width: 375px) and (max-width: 809px) and (orientation:portrait) {
+
+    .menu_hamburguesa{
+        position: absolute;
+    }
+
+    #principalCarta{
+        width: 100%;
+    }
+
+    #tituloNuestraCarta{
+        width: 100%;
+        left: 0px;
+        top: 9%;
+    }
+
+    #paraEmpezar{
+        width: 100%;
+    }
+
+    .fotosCarta{
+        width: 100%;
+        height: 400px;
+    }
+
+    #titulo_empezar{
+       left: 0px;
+       top: 99%; 
+    }
+
+    ol.listaAlergenos{
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 18px;
+        padding-left: 6%;
+    }
+
+    li.alergenos{
+        width: 160px;
+    }
+
+    li.alergenos p{
+        font-size: 20px;
+    }
+
+    .Icon{
+        width: 30px !important;
+        height: 30px !important;
+    }
+
+    #frescoComienzo{
+        width: 100%;
+        margin-left: 5%;
+    }
+
+    li.lista{
+        width: 375px;
+    }
+
+    .h5NoIcon{
+        width: 350px;
+    }
+
+    #l1izq{
+        gap: 5px;
+    }
+    #l1drc{
+        gap: 10px;
+    }
+
+    #entrantes{
+        width: 100%;
+        margin-left: 5%;
+    }
+
+    ol.listaComida{
+        flex-direction: column !important;
+        gap: 10px;
+    }
+
+    #titulo_principales{
+        left: 0px;
+        top: 328%;
+    }
+
+    #pastasYarroces, #deLaTierra, #delMar, #nuestrasEspecialidades, #nuestrosPostres, #vinos, #bebidasYrefrescos, #cafesEinfusiones, #cocktails{
+        margin-left: 5%;
+    }
+
+    .textoLista{
+        gap: 15px;
+    }
+
+    #titulo_terminar{
+        left: 0px;
+        top: 668%;
+    }
+
+    h5{
+        font-size: 20px !important;
+    }
+
+    .h5NoIcon{
+        width: 295px;
+    }
+
+    #titulo_bebidas{
+        left: 0px;
+        top: 807%;
+    }
+}

@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../static/assets/styles/Reservas.css">
+        <link rel="stylesheet" href="../static/assets/styles/Styles.css">
+
+        
+        <title>Reservas</title>
+    </head>
+    <body>
+        <header>
+            <nav>
+                <button class="botones_nav"><a
+                        href="restaurante.html">Restaurante</a></button>
+                <button class="botones_nav"><a
+                        href="carta.html">Carta</a></button>
+                <a href="home.html"><img class="logo"
+                        src="../static/assets/img/logo.png"
+                        alt="Logo UhMami" /></a>
+                <button class="botones_nav"><a
+                        href="contacto.html">Contacto</a></button>
+                <button class="botones_nav"><a
+                        href="reservas.html">Reservas</a></button>
+            </nav>
+        </header>
+
+        <main>
+            <section id="reservas">
+                <section id="principalReserva">
+                    <a href="menu_hamburguesa.html"><img class="menu_hamburguesa"
+                        src="../static/assets/img/menuhamburguesa.png"
+                        alt="Menu" /></a>
+                    <img
+                        class="foto_principal_reserva"
+                        src="../static/assets/img/21.jpg"
+                        alt="foto tarta" />
+                    <article id="tituloReservas">
+                        <h1>Reservas</h1>
+                    </article>
+                </section>
+                <section id="reservar">
+                    <img class="fondo_titulo"
+                        src="../static/assets/img/tit_reservar.png" />
+                </section>
+                <form id="formReserva" class ="form" th:action="@{/reservar}" th:object="${cliente}"
+                    th:method="post" onsubmit="return validateReservaForm()">
+                    <article id="datos_reservar">
+                        <p><input id = "nombrereserva" class="input_corto" type="text"
+                                th:name="nombre" th:field="*{nombre}"
+                                placeholder="Nombre" /> 
+                            </p>
+                        <p><input id = "apellidoreserva" class="input_largo" type="text"
+                                th:name="apellidos" th:field="*{apellidos}"
+                                placeholder="Apellidos" /> </p>
+                        <p><input id = "emailreserva" class="input_largo" type="email"
+                                th:name="email" th:field="*{email}"
+                                placeholder="Email" /></p>
+                        <p><input id="telefonoreserva" class="input_corto" type="text"
+                                th:name="telefono" th:field="*{telefono}"
+                                placeholder="Teléfono" />  <span id="errorTel"></span></p>
+                               
+                    </article>
+
+                    <section id="datos_reservar">
+                        <article id="comensales">
+                            <p><label for="comensales">Comensales : </label>
+                                <select name="comensales.idComensal" id="comensalreserva">
+                                    <option value="1"> 1 </option>
+                                    <option value="2"> 2 </option>
+                                    <option value="3"> 3 </option>
+                                    <option value="4"> 4 </option>
+                                    <option value="5"> 5 </option>
+                                    <option value="6"> 6 </option>
+                                    <option value="7"> 7 </option>
+                                    <option value="8"> 8 </option>
+                                </select>
+                            </p>
+                        </article>
+                        <section id="fecha_hora">
+                            <article id="calendario">
+                                <label for="fecha">Fecha : </label>
+                                <input type="date" id="fecha"
+                                    th:name="fecha">
+                            </article>
+                            <article id="hora">
+                                <article id="horas">
+                                    <label for="hora">Hora : </label>
+                                    <select name="horas.idHora" id="horaReserva">
+                                        <option value="1200"> 12:00
+                                        </option>
+                                        <option value="1300"> 13:00
+                                        </option>
+                                        <option value="1400"> 14:00
+                                        </option>
+                                        <option value="1500"> 15:00
+                                        </option>
+                                        <option value="2100"> 21:00
+                                        </option>
+                                        <option value="2200"> 22:00
+                                        </option>
+                                        <option value="2300"> 23:00
+                                        </option>
+                                    </select>
+                                </article>
+                            </article>
+                        </section>
+                    </section>
+
+                    <section id="plano_mesas">
+                        <p><label>Elige tu mesa: </label></p>
+                        <article id="plano">
+                            <img id="foto_plano" src="../static/assets/img/plano_color.png"
+                                alt="foto plano del restaurante" />
+                            <img id="foto_plano_mvl" src="../static/assets/img/plano_color_mvl.png"
+                                alt="foto plano del restaurante" />
+                        </article>
+                        <article class="container">
+                            <input id="mesaSeleccionada" type="hidden" value="0" />
+                            <!-- 1º fila de mesas -->
+                            <div class="item">
+                                <button type ="button" id="mesa1" class="dos_cuadrada"></button>
+                            </div>
+                            <div class="item"></div>
+                            <div class="item">
+                                <button type ="button" id="mesa2" class="cuatro_cuadrada"></button>
+                            </div>
+                            <div class="item" style="margin:0 auto;">
+                                <button type ="button" id="mesa3"class="seis"></button>
+                            </div>
+                            <div class="item">
+                                <button type ="button" id="mesa4"class="cuatro_redonda"></button>
+                            </div>
+
+                            <!-- 2º fila de mesas -->
+                            <div class="item"></div>
+                            <div class="item">
+                                <button type ="button" id="mesa5"class="dos_redonda"></button>
+                            </div>
+                            <div class="item"></div>
+                            <div class="item"></div>
+                            <div class="item"  style="margin: 0 auto;">
+                                <button type ="button" id="mesa6" class="dos_redonda"></button>
+                            </div>
+
+                            <!-- 3º fila de mesas -->
+                            <div class="item"></div>
+                            <div class="item"></div>
+                            <div class="item"></div>
+                            <div class="item">
+                                <button type ="button" id="mesa7" class="ocho"></button>
+                            </div>
+                            <div class="item"></div>
+
+                            <!-- 4º fila de mesas -->
+                            <div class="item"></div>
+                            <div class="item">
+                                <button type ="button" id="mesa8" class="dos_redonda"></button>
+                            </div>
+                            <div class="item"></div>
+                            <div class="item"></div>
+                            <div class="item"  style="margin: 0 auto;">
+                                <button type ="button" id="mesa9" class="dos_redonda"></button>
+                            </div>
+
+                            <!-- 5º fila de mesas -->
+                            <div class="item">
+                                <button type ="button" id="mesa10"class="dos_cuadrada"></button>
+                            </div>
+                            <div class="item"></div>
+                            <div class="item">
+                                <button type ="button" id="mesa11" class="cuatro_cuadrada"></button>
+                            </div>
+                            <div class="item" style="margin:0 auto;">
+                                <button type ="button" id="mesa12" class="seis"></button>
+                            </div>
+                            <div class="item">
+                                <button type ="button" id="mesa13" class="cuatro_redonda"></button>
+                            </div>
+
+                        </article>
+                    </section>
+
+                    <article id="obs">
+                        <p><label>Observaciones: </label><br>
+                            <textarea id="observacionesReservar"
+                                th:name="observacioneReservar"
+                                th:field="*{observaciones}" cols="50" rows="8"
+                                placeholder="Observaciones..."></textarea></p>
+                    </article>
+
+                    <article id="politicasreserva">
+                        <input type="checkbox" id="politica" name="politica">
+                        <label for="politica">Acepto el aviso legal y la política de privacidad</label><br>
+                    </article>
+
+                    <br>
+                    <button id="enviarReserva" type="submit"
+                        class="botones_principales">Reservar</button>
+                </form>
+
+
+
+
+                <section id="grupo">
+                    <article id="titulo_grupo">
+                        <h2 class="h2preguntas">¿Vas a venir en grupo? </h2>
+                        <h6>Pregúntanos la disponibilidad aquí</h6>
+                    </article>
+                    <form id="formulariocontacto" class = "form" th:action="@{/contacto/grupo}"  th:object="${grupo}" th:method="post">
+                        <article id="datos_contacto">
+                            <p><input class="input_corto" type="text" th:name="nombre" th:field="*{nombre}"
+                                    placeholder="Nombre"/></p>
+                            <p><input class="input_corto" type="text"
+                                    th:name="telefono" th:field="*{telefono}" placeholder="Teléfono"/></p>
+                        </article>
+                        <article id="obs">
+                            <p><label>Observaciones: </label><br>
+                                <textarea id="observacionesContacto"
+                                    th:name="observacioneGrupo" th:field="*{observaciones}" cols="50" rows="8"
+                                    placeholder="Observaciones..."></textarea></p>
+                        </article>
+                        <br>
+                            <button id="enviar" type="submit" class="botones_principales">Enviar</button>
+                    </form>
+                </section>
+
+                <section id="fotosComida">
+                    <article id="arriba">
+                        <img class="foto" src="../static/assets/img/princip.jpg" alt="foto comida" />
+                        <img class="foto" src="../static/assets/img/34.jpg" alt="foto comida" />
+                        <img class="foto" src="../static/assets/img/30.jpg" alt="foto comida" />
+                        <img class="foto" src="../static/assets/img/40.jpg" alt="foto comida" />
+                    </article>
+                    <article id="abajo">
+                        <img class="foto" src="../static/assets/img/28.jpg" alt="foto comida" />
+                        <img class="foto" src="../static/assets/img/37.jpg" alt="foto comida" />
+                        <img class="foto" src="../static/assets/img/103.jpg" alt="foto comida" />
+                        <img class="foto" src="../static/assets/img/32.jpg" alt="foto comida" />
+                    </article>
+                </section>
+
+                <section id="necesitas">
+                    <article id="titulo_necesitas">
+                        <img id="foto_necesitas" src="../static/assets/img/tit_necesitas.png" />
+                    </article>
+                    <form id="form" th:action="@{/modificar}"  th:object="${reserva}" th:method="post">
+                        <article id="datos_modificar_reserva">
+                            <p><input class="input_largo" type="text" th:name="identificador" th:field="*{identificador}"
+                                    placeholder="Identificador de la reserva"/></p> <br>
+                            <p><input class="input_largo" type="email"
+                                    th:name="email" th:field="*{email}" placeholder="Email"/></p>
+                        </article>
+                        <br>
+                            <button id="gestionar" type="submit" class="botones_principales"><a href="gestionarReservas.html">Gestionar <br> mi reserva</a></button>
+                    </form>
+                </section>
+
+                <script src="../static/javascript/valido.js"></script>
+            </main>
+
+            <footer>
+                <section id="footer">
+                    <article id="datos">
+                        <img id ="logo_footer" src="../static/assets/img/logoPeque.png" alt="Logo Uhmami" />
+                        <p class="txt_footer">Cala Gració, Ibiza - 07800</p>
+                        <p class="txt_footer">UhMami@contacto.com</p>
+                    </article>
+                    <article id="legal">
+                        <p><a href="#" class="txt_footer">Terminos y
+                                condiciones</a></p>
+                        <p><a href="#" class="txt_footer">Políticas de
+                                privacidad</a></p>
+                        <p><a href="#" class="txt_footer">Aviso legal</a></p>
+                        <p><a href="#" class="txt_footer">Política de
+                                cookies</a></p>
+                    </article>
+                </section>
+            </footer>
+        </body>
+    </html>

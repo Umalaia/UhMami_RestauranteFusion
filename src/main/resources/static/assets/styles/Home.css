@@ -1,0 +1,651 @@
+/* CSS HOME */
+
+/* TAGS */
+
+
+p.p {
+    width: 660px;
+}
+
+
+/* IDS */
+
+#foto_princ_mvl {
+    display: none;
+}
+
+#nuestra_historia {
+    display: inline-flex;
+    flex-direction: column;
+    margin-top: 5%;
+    ;
+}
+
+#historia {
+    display: flex;
+}
+
+#sumergete {
+    margin-top: 10%;
+    display: inline-flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    gap: 60px;
+    flex-shrink: 0;
+    background: var(--base-tierra, #F5EFE1);
+    box-shadow: 0px -6px 14px 0px rgba(167, 122, 54, 0.40), 0px 6px 14px 0px rgba(167, 122, 54, 0.40);
+}
+
+#fotosSumergete {
+    width: 100%;
+    display: inline-flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: -55px;
+    width: 100%;
+}
+
+#caja_empezar {
+    width: 33%;
+    display: flex;
+    align-items: center;
+    border: 1px solid #000;
+    box-shadow: 6px 6px 8px 0px rgba(0, 0, 0, 0.25);
+    width: 33%;
+}
+
+#caja_principales {
+    width: 33%;
+    display: flex;
+    align-items: center;
+    border: 1px solid #000;
+    box-shadow: 6px 6px 8px 0px rgba(0, 0, 0, 0.25);
+    width: 33%;
+}
+
+#caja_postres {
+    width: 33%;
+    display: flex;
+    align-items: center;
+    border: 1px solid #000;
+    box-shadow: 6px 6px 8px 0px rgba(0, 0, 0, 0.25);
+    width: 33%;
+}
+
+#empezar {
+    display: flex;
+    width: 479px;
+    height: 481px;
+    align-items: center;
+}
+
+#principales {
+    display: flex;
+    width: 479px;
+    height: 481px;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+#postre {
+    display: flex;
+    width: 479px;
+    height: 481px;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+#reserva {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 43px;
+}
+
+#resenas {
+    display: flex;
+    padding: 71px 226px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+#boton_empezar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: absolute;
+    margin: 0 auto;
+    margin-top: 11%;
+    margin-left: 6%;
+}
+
+#boton_princ {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: absolute;
+    margin: 0 auto;
+    margin-top: 11%;
+    margin-left: 7%;
+}
+
+#boton_postres {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: absolute;
+    margin: 0 auto;
+    margin-top: 11%;
+    margin-left: 8%;
+}
+
+#sec_reservar {
+    display: flex;
+    height: 245px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    margin-top: 5%;
+    margin-bottom: 13%;
+}
+
+#resenas {
+    display: flex;
+    height: 600px;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    background: var(--base-tierra, #F5EFE1);
+    box-shadow: 0px -6px 14px 0px rgba(167, 122, 54, 0.40), 0px 6px 14px 0px rgba(167, 122, 54, 0.40);
+    margin-bottom: 10%;
+}
+
+#cont_resenas {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 29px;
+    width: 984px;
+    height: 448px;
+}
+
+#resena {
+    display: flex;
+    width: 984px;
+    height: 225px;
+    align-items: center;
+    gap: 32px;
+}
+
+#foto_principal {
+    width: 1440px;
+}
+
+
+/* CLASES */
+.foto_principal_home {
+    width: 1440px;
+    height: 915px;
+}
+
+
+.chef {
+    width: 560px;
+    height: 800px;
+    transform: rotate(6.128deg);
+    padding-top: 8%;
+    box-shadow: 6px 6px 8px 0px rgba(0, 0, 0, 0.25);
+}
+
+.parrafos {
+    width: 700px;
+}
+
+
+
+/* MEDIA QUERIES */
+
+/*Tablet*/
+/*Landscape*/
+@media (min-width: 810px) and (max-width: 1080px) and (orientation:landscape) {
+    main {
+        margin-left: 0% !important;
+        margin-right: 0% !important;
+    }
+
+    p {
+        width: 1000px;
+        padding-left: 7%;
+        padding-left: 0%;
+    }
+
+    .p2 {
+        width: 1000px !important;
+        padding-left: 4%;
+    }
+
+
+    .parrafos {
+        width: 569px;
+    }
+
+    .chef {
+        width: 360px;
+        height: 600px;
+        padding-top: 8%;
+    }
+
+    .foto_principal_home {
+        width: 1080px;
+    }
+
+    #empezar,
+    #principales,
+    #postre {
+        height: 350px;
+        width: 100%;
+    }
+
+    #nuestra_historia {
+        width: 1080px !important;
+    }
+
+    #historia {
+        padding-left: 3.7%;
+        gap: 90px;
+    }
+
+    #foto_principal {
+        width: 1080px !important;
+    }
+
+    #sumergete {
+        margin-top: 2% !important;
+        margin-top: 3% !important;
+    }
+
+    #resenas {
+        width: 450px;
+        height: 420px;
+    }
+
+    #cont_resenas {
+        width: 900px;
+        margin-top: -4%;
+    }
+
+    #resena {
+        width: 80%;
+    }
+
+    #boton_empezar {
+        margin: 6%;
+        margin-top: 20%;
+    }
+
+    #boton_princ {
+        margin: 6%;
+        margin-top: 20%;
+    }
+
+    #boton_postres {
+        margin: 6%;
+        margin-top: 20%;
+    }
+
+    #principales {
+        width: 100%;
+    }
+
+    #postre {
+        width: 100%;
+    }
+
+}
+
+
+/*Portrait*/
+@media (min-width: 810px) and (max-width: 1080px) and (orientation:portrait) {
+
+    body {
+        width: 100% !important;
+    }
+
+    main {
+        width: 100% !important;
+    }
+
+    nav {
+        width: 100% !important;
+    }
+
+    header {
+        width: 100% !important;
+    }
+
+    h2 {
+        margin-top: 4%;
+        font-size: 45px !important;
+    }
+
+    p {
+        font-size: 25px !important;
+    }
+
+    #foto_principal {
+        width: 810px;
+    }
+
+    .foto_principal_home {
+        width: 100% !important;
+        height: 500px;
+    }
+
+    .fondo_titulo {
+        width: 480px;
+    }
+
+    #nuestra_historia {
+        width: 100%;
+    }
+
+    #fotosSumergete {
+        flex-direction: column;
+    }
+
+    #caja_empezar,
+    #caja_principales,
+    #caja_postres {
+        width: 100%;
+    }
+
+    #empezar {
+        width: 100%;
+        height: 600px;
+    }
+
+    #principales {
+        width: 100%;
+        height: 600px;
+    }
+
+    #postre {
+        width: 100%;
+        height: 600px;
+    }
+
+    #resenas {
+        width: 810px;
+        padding: 0px;
+    }
+
+    #resena {
+        width: 670px;
+    }
+
+    #cont_resenas {
+        width: 600px;
+        margin-top: 5% !important;
+    }
+
+    p {
+        font-size: 25px;
+    }
+
+    .parrafos {
+        width: 500px;
+    }
+
+    p.p {
+        width: 500px;
+    }
+
+
+    .chef {
+        width: 280px;
+        height: 450px;
+    }
+
+    .botones_secundarios {
+        width: 271px;
+        height: 83px;
+        background-size: contain !important;
+    }
+
+    #boton_empezar,
+    #boton_postres,
+    #boton_princ {
+        margin-left: 35%;
+        margin-top: 30%;
+    }
+
+    header {
+        display: block !important;
+    }
+}
+
+/*fin tablet*/
+
+
+/*movil*/
+/*Landscape*/
+@media (min-width: 375px) and (max-width: 809px) and (orientation:landscape) {
+
+    body,
+    main {
+        width: 100% !important;
+        max-width: 809px;
+    }
+
+    header {
+        display: none !important;
+    }
+
+    #foto_principal {
+        width: 100%;
+    }
+
+    .foto_principal_home {
+        width: 100% !important;
+        max-width: 809px;
+    }
+
+    #nuestra_historia {
+        width: 100%;
+        margin-left: 2%;
+    }
+
+    p.p {
+        width: 400px;
+    }
+
+    .chef {
+        width: 318px;
+        height: 604px;
+    }
+
+    .parrafos {
+        width: 431px;
+    }
+
+    .menu_hamburguesa {
+        position: absolute;
+    }
+
+    #fotosSumergete {
+        flex-direction: column;
+    }
+
+    #caja_empezar,
+    #caja_principales,
+    #caja_postres {
+        width: 100%;
+    }
+
+    #empezar,
+    #principales,
+    #postre {
+        width: 100%;
+        height: 700px;
+    }
+
+    #boton_empezar,
+    #boton_princ,
+    #boton_postres {
+        margin-left: 37%;
+    }
+
+    #resenas {
+        width: 100%;
+        height: 450px;
+    }
+
+    #resena {
+        width: 700px;
+    }
+
+    footer {
+        height: 300px !important;
+    }
+
+}
+
+
+/*Portrait*/
+@media (min-width: 375px) and (max-width: 809px) and (orientation:portrait) {
+    header {
+        display: none !important;
+    }
+
+    .menu_hamburguesa {
+        position: absolute;
+        left: 20px;
+    }
+
+    #foto_principal {
+        width: 100%;
+    }
+
+    #foto_princ_web {
+        display: none;
+    }
+
+    #foto_princ_mvl {
+        display: block;
+    }
+
+    .foto_principal_home {
+        width: 100%;
+        height: 800px;
+    }
+
+    .fondo_titulo {
+        width: 370px !important;
+        height: 180px !important;
+    }
+
+    #nuestra_historia {
+        width: 100%;
+    }
+
+    .p2 {
+        font-size: 21px;
+    }
+
+    #historia {
+        width: 100%;
+    }
+
+    p.p {
+        width: 95%;
+
+    }
+
+    .chef {
+        display: none;
+    }
+
+    .botones_principales a {
+        font-size: 25px !important;
+    }
+
+    #fotosSumergete {
+        flex-direction: column;
+    }
+
+    #caja_empezar,
+    #caja_principales,
+    #caja_postres {
+        width: 100%;
+    }
+
+    #empezar,
+    #principales,
+    #postre {
+        width: 100%;
+        height: 400px;
+    }
+
+    #boton_empezar,
+    #boton_princ,
+    #boton_postres {
+        margin-left: 20%;
+    }
+
+    #resenas {
+        width: 375px !important;
+        height: 400px;
+        padding-top: 5%;
+    }
+
+    #resena {
+        width: 100%;
+    }
+
+    #cont_resenas {
+        width: 100%;
+        gap: 0px;
+    }
+
+    #foto_resena {
+        width: 150px;
+    }
+
+    #puntos {
+        width: 70px;
+    }
+
+    .p_resena {
+        font-size: 16px;
+    }
+
+    .botones_secundarios:hover{
+        background-size: cover !important;
+    }
+
+}
+
+
+/*Estilos para animación*/
+
+#foto_resena{
+    transition: opacity 0.5s;
+}
+#textoResena{
+    transition: opacity 0.5s;
+}
+#puntos{
+    cursor: pointer;
+    margin: 0 5px;
+}
+.fade-out {
+    opacity: 0;
+}
+.fade-in {
+    opacity: 1;
+}

@@ -1,0 +1,90 @@
+/* CSS ERROR 404*/
+
+/* IDS */
+body{
+    max-height: 100px !important;
+}
+
+/* TAGS */
+#error {
+    width: 100%;
+    height: 925px;
+}
+
+#btn_volver {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: absolute;
+    margin: 5%;
+    margin-top: 38%;
+}
+
+#errorMvl{
+    display: none;
+}
+
+
+/*Landscape*/
+@media (min-width: 810px) and (max-width: 1080px) and (orientation:landscape){
+
+    #btn_volver {
+        margin-top: 69%;
+    }
+
+}
+
+
+/*Portrait*/
+@media (min-width: 810px) and (max-width: 1080px) and (orientation:portrait) {
+    #error{
+        height: 600px;
+    }
+
+    #btn_volver {
+        margin-top: 60%;
+    }
+}
+
+/*Fin tablet*/
+
+
+/*Inicio movil*/
+/*Landscape*/
+@media (min-width: 375px) and (max-width: 810px) and (orientation:landscape) {
+    #errorMvl{
+        display: block;
+    }
+
+    #error{
+        display: none !important;
+    }
+
+    #btn_volver{
+        margin-top: 15%;
+    }
+ 
+}
+
+/*Portrait*/
+@media (min-width: 375px) and (max-width: 810px) and (orientation:portrait) {
+
+    #errorMvl{
+        display: block;
+    }
+
+    #error{
+        display: none !important;
+    }
+
+    #btn_volver{
+        margin-top: 566px;
+    }
+
+    .botones_principales a{
+        font-size: 25px;
+        width: 224px;
+    }
+}
+
+/*fin movil*/

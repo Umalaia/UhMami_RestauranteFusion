@@ -1,0 +1,60 @@
+/* CSS Menú hamgurguesa */
+
+/*movil*/
+body {
+    height: 50px !important;
+}
+
+main {
+    width: 844px !important;
+    display: flex;
+    background-image: url(../img/menu_pic.png) !important;
+    background-size: cover;
+}
+
+
+h1 {
+    font-size: 60px !important;
+    margin-top: 12% !important;
+}
+
+a {
+    text-decoration: none;
+}
+
+.Icon{
+    width: 11%;
+    margin-left: 86%;
+}
+
+@media (min-width: 390px) and (max-width: 809px) and (orientation:landscape) {
+    .Icon{
+        width: 100%;
+        margin-left: 2%;
+    }
+    .boton_cerrar {
+        width: 38px;
+        height: 40px;
+        margin-top: 30px;
+        display: flex;
+        margin-left: 700px;
+        background: transparent;
+        border: 0px;
+    }
+}
+
+@media (min-width: 375px) and (max-width: 809px) and (orientation:portrait) {
+
+    main{
+        width: 100% !important;
+    }
+
+    h1{
+        font-size: 50px !important;
+    }
+
+    .Icon{
+        width: 13% !important;
+    }
+}
+

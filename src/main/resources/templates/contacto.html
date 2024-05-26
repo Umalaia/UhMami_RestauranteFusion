@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../static/assets/styles/Contacto.css">
+        <link rel="stylesheet" href="../static/assets/styles/Styles.css">
+        <title>Contacto</title>
+    </head>
+    <body>
+        <header>
+            <nav>
+                <button class="botones_nav"><a
+                        href="restaurante.html">Restaurante</a></button>
+                <button class="botones_nav"><a
+                        href="carta.html">Carta</a></button>
+                <a href="home.html"><img class="logo"
+                        src="../static/assets/img/logo.png"
+                        alt="Logo UhMami" /></a>
+                <button class="botones_nav"><a
+                        href="contacto.html">Contacto</a></button>
+                <button class="botones_nav"><a
+                        href="reservas.html">Reservas</a></button>
+            </nav>
+        </header>
+
+        <main>
+            <section id="contacto">
+                <section id="principalContacto">
+                    <a href="menu_hamburguesa.html"><img class="menu_hamburguesa"
+                        src="../static/assets/img/menuhamburguesa.png"
+                        alt="Menu" /></a>
+                    <img
+                        class="foto_principal_contacto"
+                        src="../static/assets/img/barra.jpg"
+                        alt="foto restaurante" />
+                    <article id="tituloContacto">
+                        <h1>Contacto</h1>
+                    </article>
+                </section>
+
+                <section id="encuentranos">
+                    <img id="mancha_encuentranos"
+                        src="../static/assets/img/mancha_encuentranos.png" />
+                    <article id="datos_encuentranos">
+                        <img class="Icon" src="../static/assets/icons/ubicacion.png"
+                            alt="icono ubicación" />
+                        <h2 class="h2">Encuéntranos</h2>
+                        <p>Cala Gració</p>
+                        <p>07800 - Ibiza</p>
+                        <article id="redes">
+                            <a href="#"><img href="#" id="instagram"
+                                    class="Icon"
+                                    src="../static/assets/icons/instagram.png"
+                                    alt="instagram" /></a>
+                            <a href="#"><img id="facebook" class="Icon"
+                                    src="../static/assets/icons/facebook.png"
+                                    alt="facebook" /></a>
+                        </article>
+                    </article>
+                </section>
+
+                <section id="contactanos">
+                    <img id="mancha_contactanos"
+                        src="../static/assets/img/mancha_contactanos.png" />
+                    <article id="datos_contactanos">
+                        <img class="Icon" src="../static/assets/icons/telefono.png"
+                            alt="icono teléfono" />
+                        <h2 class="h2">Contáctanos</h2>
+                        <p>687598641</p>
+                        <p>UhMami@contacto.com</p>
+                    </article>
+                </section>
+
+                <section id="horario">
+                    <img id="mancha_horario"
+                        src="../static/assets/img/mancha_horario.png" />
+                    <article id="datos_horario">
+                        <img class="Icon" src="../static/assets/icons/reloj.png"
+                            alt="icono horario" />
+                        <h2 class="h2">Nuestro horario</h2>
+                        <p>Lunes a Domingo</p>
+                        <p>12:30-17:00h / 19:30-00:00h</p>
+                        <p>Martes cerrado</p>
+                    </section>
+                </article>
+            </section>
+            <section id="pregunta">
+                <article id="titulo_pregunta">
+                    <h2 class="h2preguntas">¿Tienes alguna pregunta?</h2>
+                    <h6>Coméntanoslo y resolvemos tus dudas</h6>
+                </article>
+                <form id="form" th:action="@{/contacto/alta}"  th:object="${usuarioContacto}" th:method="post">
+                    <article id="datos_contacto">
+                        <p><input class="input_corto" type="text" th:name="nombre" th:field="*{nombre}"
+                                placeholder="Nombre"/></p>
+                        <p><input class="input_corto" type="text"
+                                th:name="telefono" th:field="*{telefono}" placeholder="Teléfono"/></p>
+                    </article>
+                    <article id="obs">
+                        <p><label>Observaciones: </label><br>
+                            <textarea id="observacionesContacto"
+                                th:name="observacioneContacto" th:field="*{observaciones}" cols="50" rows="8"
+                                placeholder="Accesibilidad del local, productos“halal” o “kosher”......"></textarea></p>
+                    </article>
+                    <br>
+                        <button id="enviar" type="submit" class="botones_principales">Enviar</button>
+                </form>
+            </section>
+        </main>
+
+        <footer>
+            <section id="footer">
+                <article id="datos">
+                    <img id ="logo_footer" src="../static/assets/img/logoPeque.png"
+                        alt="Logo Uhmami" />
+                    <p class="txt_footer">Cala Gració, Ibiza - 07800</p>
+                    <p class="txt_footer">UhMami@contacto.com</p>
+                </article>
+                <article id="legal">
+                    <p><a href="#" class="txt_footer">Terminos y
+                            condiciones</a></p>
+                    <p><a href="#" class="txt_footer">Políticas de
+                            privacidad</a></p>
+                    <p><a href="#" class="txt_footer">Aviso legal</a></p>
+                    <p><a href="#" class="txt_footer">Política de
+                            cookies</a></p>
+                </article>
+            </section>
+        </footer>
+
+    </body>
+</html>
